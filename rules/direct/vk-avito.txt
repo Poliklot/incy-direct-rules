@@ -1,5 +1,6 @@
-# VK, Mail и Авито
+# VK, Mail, RuStore и Авито
 vk.mail.ru  # Запись из рабочего экспорта; широкое исключение mail.ru не добавлено
 vk-portal.net
 vk.ru
 avito.ru
+rustore.ru  # RuStore — магазин приложений; домен и его поддомены

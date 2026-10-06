@@ -2,7 +2,7 @@
 
 [![Build and publish](https://github.com/Poliklot/incy-direct-rules/actions/workflows/build.yml/badge.svg)](https://github.com/Poliklot/incy-direct-rules/actions/workflows/build.yml)
 
-Direct-правила по сервисам: **42 доменные записи в 9 независимых модулях**, с комментариями и публичной сборкой через GitHub Actions. Это личный открытый набор, не универсальная рекомендация для всех пользователей.
+Direct-правила по сервисам: **43 доменные записи в 9 независимых модулях**, с комментариями и публичной сборкой через GitHub Actions. Это личный открытый набор, не универсальная рекомендация для всех пользователей.
 
 **[Выбрать модули](https://poliklot.github.io/incy-direct-rules/)** · **[Исходные блоки](rules/direct/)** · **[GitHub Actions](https://github.com/Poliklot/incy-direct-rules/actions)**
 
@@ -50,7 +50,7 @@ Direct-правила по сервисам: **42 доменные записи 
 | [hugging-face.txt](rules/direct/hugging-face.txt) | Hugging Face и CDN | [hugging-face.module](https://poliklot.github.io/incy-direct-rules/modules/hugging-face.module) |
 | [apple.txt](rules/direct/apple.txt) | Отдельные сервисы Apple | [apple.module](https://poliklot.github.io/incy-direct-rules/modules/apple.module) |
 | [yandex.txt](rules/direct/yandex.txt) | Яндекс и ресурсы | [yandex.module](https://poliklot.github.io/incy-direct-rules/modules/yandex.module) |
-| [vk-avito.txt](rules/direct/vk-avito.txt) | VK, Mail и Авито | [vk-avito.module](https://poliklot.github.io/incy-direct-rules/modules/vk-avito.module) |
+| [vk-avito.txt](rules/direct/vk-avito.txt) | VK, Mail, RuStore и Авито | [vk-avito.module](https://poliklot.github.io/incy-direct-rules/modules/vk-avito.module) |
 
 Написание `hightesst.ru`, `yastatic-net.ru`, `goloom.strm.yandex.net` сохранено. Явно перечисленные поддомены тоже сохранены. Из первоначальных 45 строк убраны только повторы `alfabank.ru`, `github.com`, `api.github.com`.
 
