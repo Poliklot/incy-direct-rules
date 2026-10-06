@@ -1,0 +1,7 @@
+# Яндекс
+yastatic.net  # Статические ресурсы
+yastatic-net.ru  # Отдельный домен из исходного списка
+yandex.ru
+yandex.net
+cloud-api.yandex.net  # Cloud API из исходного списка
+goloom.strm.yandex.net  # Домен сохранён как предоставлен

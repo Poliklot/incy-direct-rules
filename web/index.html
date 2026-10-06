@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="referrer" content="no-referrer">
+  <title>$profile_name — правила INCY</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #fff; color: #18334a; font: 17px/1.6 system-ui, sans-serif; }
+    main { max-width: 860px; margin: auto; padding: 52px 24px; }
+    h1 { font-size: clamp(32px, 6vw, 50px); line-height: 1.15; letter-spacing: -.035em; margin: 0 0 16px; }
+    h2 { font-size: 24px; margin-top: 36px; }
+    p { max-width: 68ch; }
+    a { color: #245e91; text-underline-offset: 3px; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible, summary:focus-visible, textarea:focus-visible { outline: 3px solid #245e91; outline-offset: 4px; }
+    .actions { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; margin: 24px 0; }
+    .import { display: inline-flex; padding: 13px 20px; background: #245e91; color: #fff; border-radius: 6px; text-decoration: none; font-weight: 650; }
+    .notice { background: #eef4fa; border-left: 4px solid #245e91; padding: 16px 20px; }
+    details { border-bottom: 1px solid #c6d5e1; padding: 16px 0; }
+    summary { cursor: pointer; font-weight: 650; padding: 4px 0; }
+    summary span, li span, footer { color: #4a6073; font-weight: 400; }
+    ul { padding-left: 24px; }
+    li { padding: 6px 0; }
+    li span { display: block; font-size: 15px; }
+    code, textarea { font: 14px/1.6 ui-monospace, monospace; overflow-wrap: anywhere; }
+    textarea { display: block; width: 100%; min-width: 100%; max-width: 100%; min-height: 90px; resize: vertical; padding: 12px; border: 1px solid #7c95a9; border-radius: 4px; color: #18334a; background: #fff; }
+    label { display: block; margin-bottom: 8px; }
+    footer { margin-top: 36px; font-size: 14px; overflow-wrap: anywhere; }
+    @media (max-width: 480px) { main { padding: 32px 18px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>$profile_name</h1>
+    <p>$rule_count доменных правил в $group_count блоках. Эти домены идут напрямую; прочий трафик — через прокси. Список обновляется из GitHub.</p>
+    <div class="actions">
+      <a class="import" href="$import_url">Добавить профиль в INCY</a>
+      <a href="profile.json">Посмотреть JSON</a>
+      <a href="https://github.com/Poliklot/incy-direct-rules">Репозиторий</a>
+    </div>
+    <p class="notice"><strong>Не активируется автоматически.</strong> Это отдельный профиль, не дополнение к текущему. Сначала сохрани текущий профиль и сравни настройки: здесь DNS Cloudflare для прокси и Google для Direct, без IP-исключений и блокировок. Затем выбери новый профиль в INCY и переподключи VPN.</p>
+    <details>
+      <summary>Если кнопка не открыла приложение</summary>
+      <p>Скопируй полную ссылку и используй импорт из буфера обмена в разделе профилей маршрутизации INCY.</p>
+      <label for="import-link">Ссылка с автообновлением</label>
+      <textarea id="import-link" readonly spellcheck="false">$import_url</textarea>
+    </details>
+    <h2>Что идёт напрямую</h2>
+    <p><code>domain:</code> означает домен вместе с поддоменами; <code>full:</code> — только точное имя. Никаких автоматических исключений для всех .ru или всех IP страны.</p>
+    $rule_groups
+    <h2>Как изменить список</h2>
+    <p>Открой нужный блок, нажми «Редактировать этот блок на GitHub», добавь домены и пояснения после <code>#</code>. После сохранения в <code>main</code> Actions проверит список и опубликует новый профиль. В INCY можно нажать «Обновить сейчас» в источнике обновлений.</p>
+    <footer>
+      <p>Версия исходников: $published_at. <a href="build.json">Данные сборки</a>, <a href="profile.json.sha256">SHA-256</a>, <a href="direct.txt">Плоский список</a>.</p>
+      <p>Личный список исключений, не универсальная рекомендация. Direct не скрывает IP от сайтов. Без VPN-ключей, аналитики и внешних ресурсов. Неофициальный проект; не связан с разработчиками INCY.</p>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,3 @@
+# Hugging Face
+huggingface.co  # Основной сервис
+us.aws.cdn.hf.co  # Конкретный CDN из исходного списка; не весь hf.co

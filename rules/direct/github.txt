@@ -1,0 +1,12 @@
+# GitHub
+# Поддомены оставлены явно: так видно, какие загрузки были нужны владельцу.
+# githubusercontent.com и github.io охватывают также пользовательский контент.
+github.com  # Основной сайт
+githubassets.com  # Ресурсы интерфейса
+githubusercontent.com  # Пользовательский контент и загрузки
+github.io  # GitHub Pages, включая опубликованный профиль этого репозитория
+api.github.com  # API
+codeload.github.com  # Архивы исходников
+raw.githubusercontent.com  # Файлы в raw-формате
+release-assets.githubusercontent.com  # Файлы релизов
+objects.githubusercontent.com  # Объекты и загрузки из исходного списка

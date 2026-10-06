@@ -1,0 +1,5 @@
+# Рабочие инструменты
+bmit.bitrix24.ru  # Конкретный портал Bitrix24; не весь bitrix24.ru
+auth2.bitrix24.net  # Авторизация Bitrix24 из исходного списка
+kaiten.ru  # Kaiten
+yonote.ru  # Yonote

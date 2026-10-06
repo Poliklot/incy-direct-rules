@@ -1,0 +1,5 @@
+# Разработка и Godot
+godotengine.org  # Godot
+downloads.godotengine.org  # Загрузки движка
+docs.godotengine.org  # Документация
+registry.npmjs.org  # Только registry; не весь npmjs.org

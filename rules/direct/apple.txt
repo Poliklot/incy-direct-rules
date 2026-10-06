@@ -1,0 +1,6 @@
+# Отдельные сервисы Apple
+# Не добавляем широкое исключение для всех apple.com.
+ocsp.apple.com  # Проверка сертификатов
+ocsp2.apple.com  # Проверка сертификатов
+valid.apple.com  # Домен из исходного списка
+api.apple-cloudkit.com  # CloudKit API
