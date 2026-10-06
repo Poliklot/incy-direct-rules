@@ -1,5 +1,5 @@
 # VK, Mail и Авито
-vk.mail.ru  # Только этот домен и его поддомены; не весь mail.ru
+vk.mail.ru  # Запись из рабочего экспорта; широкое исключение mail.ru не добавлено
 vk-portal.net
 vk.ru
 avito.ru

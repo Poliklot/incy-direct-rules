@@ -4,7 +4,7 @@
 github.com  # Основной сайт
 githubassets.com  # Ресурсы интерфейса
 githubusercontent.com  # Пользовательский контент и загрузки
-github.io  # GitHub Pages, включая опубликованный профиль этого репозитория
+github.io  # GitHub Pages, включая опубликованные модули этого репозитория
 api.github.com  # API
 codeload.github.com  # Архивы исходников
 raw.githubusercontent.com  # Файлы в raw-формате
